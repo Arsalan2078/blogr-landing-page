@@ -1,0 +1,18 @@
+// variables
+@use "colors";
+@use "typography";
+
+// functions and mixins
+@import "functions";
+@import "mixins";
+
+// base styles
+@import "base";
+
+body {
+  font-family: set-font-stack(overpass);
+}
+
+h1 {
+  font-size: set-font-size(rg);
+}

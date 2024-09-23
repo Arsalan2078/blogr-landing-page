@@ -1,0 +1,14 @@
+@use "colors";
+@use "typography";
+
+@function set-color($type, $color) {
+  @return map-get(map-get(colors.$colors, $type), $color);
+}
+
+@function set-font-stack($font-stack) {
+  @return map-get(typography.$font-stacks, $font-stack);
+}
+
+@function set-font-size($font-size) {
+  @return map-get(typography.$font-sizes, $font-size);
+}
