@@ -6,13 +6,12 @@
 @import "functions";
 @import "mixins";
 
+
+// reset all styles
+@import "reset";
+
 // base styles
 @import "base";
 
-body {
-  font-family: set-font-stack(overpass);
-}
-
-h1 {
-  font-size: set-font-size(rg);
-}
+// utilities
+@import "utilities";
